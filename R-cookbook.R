@@ -122,3 +122,5 @@ bin_stocks = stock_prices[,c("price_Open","price_High")]
 # Bin the variables by quantiles
 bin_stocks$price_Open_bin = cut2(bin_stocks$price_Open, g =5)
 summary(bin_stocks$price_Open_bin)
+
+######continue
