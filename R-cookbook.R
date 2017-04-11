@@ -29,11 +29,12 @@ install.packages("Hmisc")        # Very useful set of functions for analysis
 install.packages("scales")
 
 #Use the package in a R script
-library(tidyverse)
+library("ggplot2")
 library("stringr")
 library("lubridate")
 library("reshape2") 
 library("data.table")
+library("dplyr")
 library("PerformanceAnalytics")
 library("zoo")
 library("tseries")
@@ -122,9 +123,13 @@ bin_stocks = stock_prices[,c("price_Open","price_High")]
 bin_stocks$price_Open_bin = cut2(bin_stocks$price_Open, g =5)
 summary(bin_stocks$price_Open_bin)
 
+<<<<<<< HEAD
 ############## Divers ############################
 
 # aggregate and create list by group
 mydf <- data_frame(dressId=c(6,9,10,10,10,12,12),
                    color=c("yellow","red","green","purple","yellow","purple","red"))
 aggreg <- aggregate(color ~ dressId, mydf, paste, collapse=",")
+=======
+######continue
+>>>>>>> c4f8724f8f3682905c5420bdbb278c3e794cb4f3
