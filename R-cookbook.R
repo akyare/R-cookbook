@@ -128,4 +128,3 @@ summary(bin_stocks$price_Open_bin)
 mydf <- data_frame(dressId=c(6,9,10,10,10,12,12),
                    color=c("yellow","red","green","purple","yellow","purple","red"))
 aggreg <- aggregate(color ~ dressId, mydf, paste, collapse=",")
-
